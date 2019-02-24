@@ -1,0 +1,360 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Amatic SC', cursive;
+font-family: 'Merienda', cursive;
+font-family: 'BebasNeueRegular';
+font-family: Calibri, sans-serif; 
+*/
+
+*{
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+        margin: 0;
+    padding: 0;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+}
+header h1{
+    padding-top: 2.5vw;
+    font-size: 5vw;
+    color: #2c2c2c;
+    text-shadow: 
+     4px 4px 0px #d5d5d5, 
+      7px 7px 0px #962646;
+      transition: all .7s ease;
+}
+
+header h1:hover{
+    font-size: 6vw;
+    transition: .5s ease;
+}
+
+footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.34);
+}
+
+footer p{
+    font-size: 1.4vw;
+    transition: all .7s ease;
+}
+  
+
+
+
+form{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding:5vh;
+}
+
+#resultsText{
+    font-size: 75px;
+    font-family: 'BebasNeueRegular';
+    font-weight: 100; 
+}
+
+button{
+    background-color: #00cc99;
+    font-size: 1.5vw;
+}
+
+/*h1{
+    font-size: 10vh;
+    font-weight: 0.5vh;
+    text-align: center;
+}
+
+h2{
+    font-size: 75px;
+    font-family: 'BebasNeueRegular';
+    font-weight: 100;
+}*/
+
+#logo{
+    padding-top: 5vh;
+    height:8vw;
+    width:8vw;
+}
+
+
+
+#home{
+    padding-top: 5vh;
+    height:7vw;
+    width:7vw;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transition: all .7s linear;
+}
+
+
+#welcome{
+    font-size: 2.3vw;
+    text-align: center;
+    padding: 5vw 2vw 2vw 2vw;
+    transition: all .7s ease;
+}
+
+
+/*input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 3vw white inset;
+}*/
+
+#nameinput{
+    background: transparent;
+    opacity: 10%;
+    font-size: 2vw;
+    border-radius: 2%;
+    border-color: transparent;
+    border-bottom: .2vh solid black;
+    transition: all .3s ease;
+}
+
+#inName :hover{
+    color: #73182c;
+/*    border-bottom-left-radius: 30%;*/
+    border-bottom-right-radius: 50%;
+    transition: .4s ease;
+}
+
+::placeholder{
+    color: #73182c;
+    opacity: 1;
+}
+
+#inName{
+    font-size: 2vw;
+    text-align: center;
+}
+#inName h1{
+    margin-top: 5vh;
+    font-size: 2vw;
+}
+
+#beginbutton{
+    font-size: 2vw;
+    line-height: 60px;
+    text-align: center;
+}
+
+#beginbutton{
+    text-align: center;
+    padding: 0% 0 3.5% 0;
+}
+#beginbutton a {
+    display: inline-block;
+    background-color: #73182c;
+    color: black;
+    text-decoration: none;
+    padding: 0.3em .6em;
+    border-radius: 200px;
+    box-shadow: 0vw 0vw 1vw .2vw black;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: all .5s linear; /* works for default i believe */
+}
+#beginbutton a:hover {
+    border-radius: .3em;
+    color: #73182c;
+    background-color: black;
+    box-shadow: none;
+    transition: .9s;
+    cursor: pointer;
+}
+#question{
+    background-color:rgba(255, 255, 255, 0.24);
+}
+
+#question h2{
+    padding: 4vw 0 2vw 0;
+    font-size: 2vw;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+#question h3{
+    padding: 2vw 0 0vw 0;
+    font-size: 1.8vw;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+.selected{
+    border:20px solid yellow;
+}
+
+#results{
+    display:flex;
+    flex-direction: column;
+}
+
+#results img{
+    height:15%;
+    width:15%;
+    
+}
+
+
+#choices {
+    display: flex;
+    justify-content: center;
+}
+
+#choices a {
+    max-height: 11vw;
+
+}
+
+#choices a img{
+    height: 11vw;
+    width: 11vw;
+
+}
+
+#choices h3{
+    padding: 0;
+    transition: all .5s ease;
+}
+
+#choices h3 img:nth-child(1){
+    height: 18vw;
+    width: 20vw;
+    padding: 0 4vw 0 4vw;
+    transition: all .5s ease;
+}
+#choices h3 img:nth-child(2){
+    height: 18vw;
+    width: 20vw;
+    padding: 0 4vw 0 4vw;
+    transition: all .5s ease;
+
+}
+/*#option{
+    border: 3px solid #cccccc;
+    justify-content:center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}*/
+
+
+
+/*#choices h2{
+    font-size:3vw;
+}*/
+
+/*#choices img:nth-child(2), #choices img:nth-child(3),#choices img:nth-child(4),#choices img:nth-child(5){
+    border: 20px solid #73182c;
+    height:15%;
+    width:15%;
+    display: flex;
+    flex-direction: row;
+}*/
+
+
+
+
+
+/** Result Page **/
+/*#results{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}*/
+#resultBody{
+
+}
+#result{
+    padding: 2vh 10vh 10vh 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#results img{
+    width: 40vh;
+    height:40vh;
+
+}
+#resultsText{
+    padding: 2vw 2vw 2vw 2vw;
+}
+.record {
+    padding: 0vw 2vw 0vw 2vw;
+    max-height: 40vw;
+}
+
+.desc{
+    text-decoration: none;
+    font-size: 1.5vw;
+    padding: 2vw 2vw 2vw 2vw;
+    text-align: justify;
+    color: black;
+}
+
+#records{
+ display: flex;
+ justify-content: center;
+background-color: rgba(255, 255, 255, 0.4);
+}
+
+#mapid { height: 300px; 
+        width: 300px;
+        position: absolute;
+        }
+#indexbody{
+    background-image: url('../images/bwlake.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 60vw;
+}
+#questionBody{
+    background-image: url('../images/bwroad.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 60vw;
+
+}          
+
+/*#records img:hover:nth-child(1){
+    border-radius: .3em;
+    color: #73182c;
+    background-color: black;
+    box-shadow: none;
+    transition: 1s;
+}
+*/
+
+#mapid.style{
+
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(2, 2, 2); /*for compatibility*/
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
